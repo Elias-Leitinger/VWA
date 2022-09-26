@@ -19,3 +19,6 @@ main.lof
 main.tdo
 *.synctex.gz
 template/blind*
+main.fls
+main.fdb_latexmk
+vwa.pdf
