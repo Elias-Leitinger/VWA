@@ -17,7 +17,7 @@
 %% e.g., "A4", "letter", "legal", "executive", ...
 %% The size of the paper of the resulting PDF file.
 
-\newcommand{\mylaterality}{twoside}
+\newcommand{\mylaterality}{oneside}
 %% "oneside" or "twoside"
 %% Either you are creating a document which is printed on both, left pages
 %% and right pages (twoside) or you create a document which is printed
@@ -235,7 +235,7 @@
 \input{\mytitlepage}            %% include title page
 
 
-\input{template/declaration_TU_Graz}  %% Statutory Declaration
+%\input{template/declaration_TU_Graz}  %% Statutory Declaration
 % \input{thanks}                %% this is a suggestion: you have to create this file on demand
 % \input{foreword}              %% this is a suggestion: you have to create this file on demand
 
@@ -249,7 +249,6 @@
 
 \tableofcontents                %% this produces the table of contents - you might have guessed :-)
 
-\listoffigures
 
 %% if myaddlistoftodos is set to "true", the current list of open todos is added:
 \ifthenelse{\boolean{myaddlistoftodos}}{
@@ -277,11 +276,12 @@
 
 \printbibliography              %% remove, if using BibTeX instead of biblatex
 % \include{further_ressources}  %% this is a suggestion: you have to create this file on demand
+\listoffigures
 
 
 
 
-
+\input{eigenstand.tex}
 
 %%%% end{document}
 \end{document}
