@@ -38,8 +38,16 @@ generally increases with the inverse of the velocities of the reactants \footcit
 
 \section{Criticality}
 Criticality is the operating condition of a nuclear reactor, in which the neutrons produced by fission
-events is sufficient to sustain a chain reaction \footcite[308]{nucfundamentals}\textsuperscript{,} \footcite[39]{ReactorPhysics}.
-%TODO: Expand with info from ReactorPhysics
+events is sufficient to sustain a chain reaction. It is measured using the multiplication factor
+$k$. It is defined as in~\ref{multfact}. If the factor $k$ equals $1$ the reaction is said to be
+critical as the number of neutrons remains constant. If the factor $k$ is less than $1$, therefore
+the number of neutrons is decreasing and the chain reaction is said to be subcritical. If the factor
+$k$ is grater than $1$ the number of neutrons is increasing exponentially and the reaction is supercritical.
+\footcite[308]{nucfundamentals}\textsuperscript{,} \footcite[39]{ReactorPhysics}.
+\begin{equation}
+    \label{multfact}
+    k~=~\frac{\textit{number of neutrons in one generation}}{\textit{number of neutrons in the previous generation}}
+\end{equation}
 
 \section{Components of Nuclear Reactors}
 \subsection{Fuel}
