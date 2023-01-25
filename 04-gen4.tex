@@ -88,7 +88,8 @@ as the pressurized water reactors currently in use\footcite{VHTRTS}.
 Because very high temperature reactors operate at elevated temperatures and may make use of turbines
 operated directly by the coolant gas, they have comparatively high thermal efficiencies of 42\%.
 They, however, are expected to reach efficiencies in excess of 50\% with further development\footcite[62]{T4Gen}.
-\section{Sodium-Cooled Fast Reactors}
+\pagebreak
+\subsection{Sodium-Cooled Fast Reactors}\label{chap:sfr}
 \myfig{SFR}
     {height=0.4\textheight}
     {Schematic representation of sodium-cooled fast reactor}
@@ -122,7 +123,9 @@ the chance of environmental pollution is reduced because there remains little to
 waste to be stored away. The primary operating risk is the high reactivity of sodium, especially with water.
 Therefore even contact with miniscule amounts of \ce{H_{2}O}, such as those in the atmosphere, could
 lead to catastrophic chemical explosions. Therefore great care needs to be taken to protect the cooling
-sodium from water. Lastly, reactors of this type have a self regulating
+sodium from water. Additionally, caution needs to be exercised to keep the sodium coolant
+below its boiling point of 883°C to avoid the creation of a positive void coefficient, which
+would create a fatal super critical state. Lastly, reactors of this type have a self regulating
 property, as the core expands with increased heat. This allows more neutrons to escape the
 core reducing reactivity\footcite[30-37]{GIFAR}.
 \subsubsection{Efficiency}
@@ -130,6 +133,57 @@ Sodium-cooled fast reactors can reach high thermal efficiencies comparable to th
 reactors. Also, to reduce mechanical failures, electrodynamic pumps can be used to propel the
 molten sodium instead of mechanical pumps, reducing the amount of moving parts and thereby increasing
 reliability\footcite[30-37]{GIFAR}. 
+\pagebreak
+\subsection{Lead-Cooled Fast Reactors}
+\myfig{LFR}
+    {height=0.4\textheight}
+    {Schematic representation of sodium-cooled fast reactor}
+    {Schematic representation of sodium-cooled fast, public domain}
+    {fig:lfr}
+The construction of lead cooled fast reactors is very similar to that of sodium-cooled fast reactors,
+as can be seen in figure~\ref{fig:lfr}. For the sake of brevity, only the differences to sodium-cooled
+fast reactors will be illustrated, while the parallels are omitted.\\
+The two main problems of using sodium as a coolant can be solved by replacing it with another metal.
+Lead is well suited for such an application due to it't relatively high melting point of 337°C and
+the high boiling temperature of 1750°C. Therefore it is impossible for the lead to start boiling inside
+the reactor, because the fuel assemblies and the reactor hull would be destroyed first.
+Another advantage is the ability of lead to naturally circulate through the core because of the differences
+in density of lead at different temperatures.
+Because of the relatively high melting temperature great caution needs to be exercised as to not freeze the coolant
+inside the reactor. To mitigate this possibility the alloy lead-bismuth may be used. Lead-bismuth consists
+of 55.5 mass \% lead and 44.5 mass \% bismuth. This alloy has a low melting temperature 124°C, but also
+a decreased boiling point of 1670°C. Except for the higher nuclear cross section of lead-bismuth, the
+two coolants can be used interchangeably. To further examine lead and bismuth as coolants close attention
+needs to be drawn towards the individual isotopes of these metals\footcite[137-174]{IVHandbook}.
+\subsubsection{Coolant Isotopes}
+As can be seen from table~\ref{lead}, \ce{^{204}_{82}Pb} compared to bismuth, but because naturally occurring lead
+consists of a mixture of the lead isotopes listed in~\ref{lead} in the ratios given, its total
+cross section of neutron absorption is lower compared to bismuth. Through neuton capture~\ce{^{206}_{82}Pb} and
+~\ce{^{207}_{82}Pb} are converted to \ce{^{208}_{82}Pb} during the nuclear reactor operation. Through
+further neutron absorption \ce{^{209}_{82}Pb} can be created, which decays to \ce{^{209}_{83}Bi}
+with a half life of 3.23h. When \ce{^{209}_{83}Bi} absorbs a neutron, \ce{^{210}_{83}Bi} which
+decays to \ce{^{210}_{84}Po} with a half life of 5 days, a strong alpha emitter with a half life
+of 124 days. \ce{^{210}_{84}Po} decays to \ce{^{204}_{82}Pb}. Thereby the coolant is not only contaminated,
+but there is a significant safety risk for the operating personell, but due to the short half life
+of the relevant isotopes, one only has to await the decay of the isotopes if disposal is necessary\footcite[115-134]{T4Gen}.
+\begin{table}[h!]\label{lead}
+    \begin{tabular}{llllll}
+    Isotope                                     & \ce{^{204}_{82}Pb} & \ce{^{206}_{82}Pb} & \ce{^{207}_{82}Pb} & \ce{^{208}_{82}Pb} & \ce{^{209}_{83}Bi} \\
+    Abundance (\%)                              &   1.4              &       24.1         &       22.1         &         52.4       &  100  \\
+    Half-Life (years)                           &   $1.4*10^{17}$    &     Stable         &     Stable         &     Stable         &   $2*10^{19}$ \\
+    Nuclear cross section (mbarn) &         703        &        26.6        &      622           &        0.23        &   32.4 \\ \hline
+    \multicolumn{6}{l}{Table~\ref{lead}}
+    \end{tabular}
+    \end{table}
+\subsubsection{Safety}
+Because lead is susceptible to explosive reactions with water and because it mitigates the problem
+of a positive void coefficient it may be better suited a as coolant for a fast rector. Additionally,
+in the case of a breach in the reactor vessel, the leaking lead solidifies below melting temperature
+and thereby stops further evacuation of the reactor chamber. The main problem of safety in operation
+is the danger of irradiation caused by the contamination of the lead coolant through the generation
+of radioactive isotopes, mainly \ce{^{210}_{84}Po}\footcite[132]{T4Gen}.
+\subsubsection{Efficiency}
+The efficiency and fuel cycle benefits are identical to those of sodium-cooled fast reactors. See chapter~\ref{chap:sfr}
 \pagebreak
 \subsection{Molten Salt Reactors}
 \myfig{MSR}
