@@ -231,17 +231,15 @@
 
 \frontmatter                    %% KOMA: roman page numbers and such; only available in scrbook
 
-\input{colophon}                %% defines information about editor, LaTeX, font, ...
+%\input{colophon}                %% defines information about editor, LaTeX, font, ...
 
 %% Choose your desired title page:
 \input{\mytitlepage}            %% include title page
-\newpage
-\
-\newpage
+
 
 %\input{template/declaration_TU_Graz}  %% Statutory Declaration
 % \input{thanks}                %% this is a suggestion: you have to create this file on demand
-% \input{foreword}              %% this is a suggestion: you have to create this file on demand
+\input{foreword}              %% this is a suggestion: you have to create this file on demand
 
 
 %% include the abstract without chapter number but include it on table of contents:
@@ -266,17 +264,19 @@
 %\input{example-style-chapter}   %% remove this line to get rid of the style chapter
 
 %% include tex file chapters:
-% \include{introduction}        %% this is a suggestion: you have to create this file on demand
+\include{introduction}        %% this is a suggestion: you have to create this file on demand
 
 \input{01-basics}
 \input{02-history}
 \input{03-types}
 \input{04-gen4}
+\input{05-climate}
 
 % \include{problem}             %% this is a suggestion: you have to create this file on demand
 % \include{solution}            %% this is a suggestion: you have to create this file on demand
 % \include{evaluation}          %% this is a suggestion: you have to create this file on demand
 % \include{outlook}             %% this is a suggestion: you have to create this file on demand
+\include{conclusion}
 
 \appendix                       %% closes main document, appendix follows until end; only available in book-classes
 \addpart*{Appendix}             %% adding Appendix to tableofcontents
