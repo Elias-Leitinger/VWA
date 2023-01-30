@@ -24,3 +24,19 @@ work.
 \subsection{Own Creation}
 Equations~\ref{decay},~\ref{fiss},~\ref{fiss2},~\ref{multfact} and~\ref{neut} were typeset by the author with
 information taken from~\footcite{ReactorDesign}.
+
+\chapter{Six Factor Formula}\label{app:sixfact}
+\begin{equation}\label{sixfacteq}
+    k = \eta f p \varepsilon P_{FNL} P_{TNL} = k_{\infty} P_{FNL} P_{TNL}
+\end{equation}
+Equation~\ref{sixfacteq} is used to calculate the multiplication factor k where\footcite{nucfundamentals}: \\
+\begin{equation}
+    \begin{split}
+    \textit{Thermal Fission Factor}: & \eta = \frac{\nu \sigma_f^F}{\sigma_a^F} \\
+    \textit{Thermal Utilisation Factor}: & f = \frac{\Sigma_a^F}{\Sigma_a} \\
+    \textit{Resonance Escape Probability}: & p \approx \mathrm{exp} \left( -\frac{\sum\limits_{i=1}^{N} N_i I_{r,A,i}}{\left( \overline{\xi} \Sigma_p \right)_{mod}} \right) \\
+    \textit{Fast Fission Factor}: & \varepsilon \approx 1 + \frac{1-p}{p}\frac{u_f \nu_f P_{FAF}}{f \nu_t P_{TAF} P_{TNL}} \\
+    \textit{Fast Non-Leakage Probability}: & P_{FNL} \approx \mathrm{exp} \left( -{B_g}^2 \tau_{th} \right) \\
+    \textit{Thermal Non-Leakage Probability}: & P_{TNL} \approx \frac{1}{1+{L_{th}}^2 {B_g}^2}
+    \end{split}
+\end{equation}
